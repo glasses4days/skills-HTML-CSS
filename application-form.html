@@ -2,10 +2,27 @@
 <html>
 <head>
     <title>Skills-HTML-CSS</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<!-- your html goes here -->
+    <h1>Job Application</h1>
+    <p class="instruction">Thanks for your interest in our company. Please submit the information below
+        to begin your application.</p>
+    <form action="/application" method="POST">
+        <label for="firstname">First name:</label>
+        <input type="text" name="firstname" class="yellow"><br>
+        <label for="lastname">Last name:</label>
+        <input type="text" name="lastname" class="yellow bold"><br>
+        <label for="salary">Salary requirement:</label>
+        <input type="number" name="salary" class="yellow"><br>
+        <fieldset>
+        <legend>Job:</legend>
+        <input type="radio" name="job" value="software">Software Engineer 
+        <input type="radio" name="job" value="qa">QA Engineer
+        <input type="radio" name="job" value="product">Product Manager<br>
+        </fieldset><br>
+        <input type="submit" value="I'm ready for a job!" class="yellow" id="submit">
+    </form>
 
 </body>
 </html>
